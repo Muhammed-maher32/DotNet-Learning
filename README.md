@@ -28,11 +28,12 @@ A comprehensive technical repository documenting advanced C# mechanics, .NET int
   - [3.3 Threading & Synchronization](#33-threading--synchronization)
   - [3.4 Memory & Performance](#34-memory--performance)-->
 - [4. LINQ](#4-linq)
+<!--
 - [5. Database Architecture](#5-database-architecture)
   - [5.1 Design & Structure](#51-design--structure)
   - [5.2 Performance & Optimization](#52-performance--optimization)
   - [5.3 Concurrency & Reliability](#53-concurrency--reliability)
-  - [5.4 Advanced Topics](#54-advanced-topics)
+  - [5.4 Advanced Topics](#54-advanced-topics)-->
   
 <!--- [6. EF Core](#6-ef-core)
   - [6.1 Micro ORM vs Full ORM](#61-micro-orm-vs-full-orm)
