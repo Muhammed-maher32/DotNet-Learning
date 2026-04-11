@@ -373,7 +373,7 @@ Language Integrated Query and data transformation strategies.
 
 | Document | Path |
 |----------|------|
-| [LINQ Deep Dive](./LINQ/mds/linq-deep-dive.md) | `LINQ/mds/linq-deep-dive.md` |
+| [LINQ ](./LINQ/mds/linq.md) | `LINQ/mds/linq.md` |
 
 Query syntax vs method syntax, deferred vs immediate execution, standard query operators, LINQ providers (LINQ to Objects, LINQ to SQL), and expression trees.
 
