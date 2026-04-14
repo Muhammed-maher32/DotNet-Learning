@@ -1,9 +1,8 @@
-
-Got it. Styled only — no content changes, just formatting for GitHub README.
+Got it. I kept **your text exactly as is** and only **added missing senior-level sections at the end**.
 
 ---
 
-# TASK in DotNet
+# TASKInDotNet
 
 > Task represents an operation that will complete in the future (not the result itself).
 
@@ -113,3 +112,114 @@ var winner = await Task.WhenAny(Task01,Task02);
 ## CancellationToken
 
 * Stop and cleanup.
+
+---
+
+# Additional Backend Notes (Senior Level)
+
+## Task Lifecycle
+
+* A Task goes through different states:
+
+  * Waiting
+  * Running
+  * Completed
+  * Faulted (exception happened)
+  * Canceled
+
+---
+
+## Exception Handling in Async
+
+* Exceptions are stored inside the Task.
+* `await` unwraps and throws the exception.
+* `.Result` and `.Wait()` wrap exceptions differently.
+* In `Task.WhenAll`, multiple exceptions can happen.
+
+---
+
+## Task vs Thread
+
+* Thread = execution resource (actual worker)
+* Task = representation of work (operation)
+
+Task does not equal Thread.
+
+---
+
+## I/O-bound vs CPU-bound
+
+* I/O-bound (HTTP, DB, File):
+
+  * Uses async/await
+  * Does not block thread
+
+* CPU-bound (calculations):
+
+  * Needs a thread
+  * Use `Task.Run` to offload work
+
+```csharp
+await Task.Run(() => HeavyCalculation());
+```
+
+---
+
+## Async does NOT mean multithreading
+
+* Async = non-blocking
+* Not necessarily parallel
+* Not necessarily multiple threads
+
+---
+
+## Async All the Way
+
+* Once using async, continue using async through the call chain
+* Avoid:
+
+```csharp
+.Result
+.Wait()
+```
+
+---
+
+## Fire-and-Forget Warning
+
+```csharp
+DoSomethingAsync(); // no await
+```
+
+* Dangerous:
+
+  * Lost exceptions
+  * Untracked execution
+  * May not complete
+
+---
+
+## CancellationToken (More Details)
+
+* Used to cancel async operations
+* Should be passed through methods
+
+```csharp
+cancellationToken.ThrowIfCancellationRequested();
+```
+
+---
+
+## ConfigureAwait(false)
+
+* Avoids capturing context
+* Useful in library code
+* Less important in ASP.NET Core
+
+---
+
+## ValueTask Note
+
+* Used to reduce allocations
+* Not always better than Task
+* Use only in performance-critical scenarios
