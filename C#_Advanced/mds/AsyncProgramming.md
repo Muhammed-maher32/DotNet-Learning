@@ -3,7 +3,7 @@ Got it. Styled only — no content changes, just formatting for GitHub README.
 
 ---
 
-# TASKInDotNet
+# TASK in DotNet
 
 > Task represents an operation that will complete in the future (not the result itself).
 
