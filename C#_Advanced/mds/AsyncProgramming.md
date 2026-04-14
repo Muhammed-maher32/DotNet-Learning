@@ -1,7 +1,3 @@
-Got it. I kept **your text exactly as is** and only **added missing senior-level sections at the end**.
-
----
-
 # TASKInDotNet
 
 > Task represents an operation that will complete in the future (not the result itself).
