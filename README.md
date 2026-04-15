@@ -46,7 +46,7 @@ Language Integrated Query and data transformation.
 
 ## Why This Repo
 
-This repository is a structured knowledge base for documenting my learning journey in .NET backend development.
+IDK WHHHY ACTUALLY, I JUST WANTED TO DOCUMENT MY JOURNEY IN BACKEND AND I HOPE SOMEONE FIND IT AND IT HELPS HIM!! <3
 
 **[Back to Top](#table-of-contents)**
 
