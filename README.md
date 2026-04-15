@@ -1,5 +1,7 @@
 # DotNet-Learning
 
+A repository for my .NET backend learning journey.
+
 ---
 
 ## Table of Contents
@@ -11,13 +13,13 @@
 
 ## 1. Advanced C#
 
-Deep dives into advanced C# topics and runtime behavior.
+advanced C# topics.
 
-| Document | Path |
-|----------|------|
-| [Async Programming](./C%23_Advanced/mds/AsyncProgramming.md) | `C#_Advanced/mds/AsyncProgramming.md` |
+### Topics
 
-Covers async/await, Task lifecycle, concurrency patterns, and real-world async pitfalls.
+| Topic | Link |
+|------|------|
+| Async Programming | [Open](./CSharp-Advanced/mds/AsyncProgramming.md) |
 
 **[Back to Top](#table-of-contents)**
 
@@ -27,12 +29,22 @@ Covers async/await, Task lifecycle, concurrency patterns, and real-world async p
 
 Language Integrated Query and data transformation.
 
-| Document | Path |
-|----------|------|
-| [LINQ Notes](./LINQ/mds/linq-notes.md) | `LINQ/mds/linq-notes.md` |
+### Topics
 
-Query syntax vs method syntax, deferred execution, and real-world usage.
+| Topic | Link |
+|------|------|
+| LINQ  | [Open](./LINQ/mds/linq-notes.md) |
 
 **[Back to Top](#table-of-contents)**
 
 ---
+
+## Why This Repo
+
+This repository is not just notes, it's a structured knowledge base.
+
+---
+
+## Author
+
+**Mohamed Maher**
