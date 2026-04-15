@@ -1,8 +1,4 @@
 # DotNet-Learning
-# .NET Backend Engineering: Advanced Deep Dives
-
-A comprehensive technical repository documenting advanced C# mechanics, .NET internals, and backend engineering concepts.
-
 ---
 
 ## Table of Contents
@@ -34,11 +30,11 @@ Language Integrated Query and data transformation.
 |----------|------|
 | [LINQ Notes](./LINQ/mds/linq-notes.md) | `LINQ/mds/linq-notes.md` |
 
-Query syntax vs method syntax, deferred execution, and real-world usage.
+<!--Query syntax vs method syntax, deferred execution, and real-world usage.-->
 
 **[Back to Top](#table-of-contents)**
 
 ---
 ## Author
 
-**Mohamed Maher** — .NET Backend Engineer  
+**Mohamed Maher** | Junior SoftwareEngineer
