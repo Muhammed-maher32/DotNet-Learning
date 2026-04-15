@@ -1,10 +1,11 @@
 # DotNet-Learning
+
 ---
 
 ## Table of Contents
 
-- [1. Advanced C#](#advanced-c)
-- [2. LINQ](#linq)
+- [1. Advanced C#](#1-advanced-c)
+- [2. LINQ](#2-linq)
 
 ---
 
@@ -30,11 +31,8 @@ Language Integrated Query and data transformation.
 |----------|------|
 | [LINQ Notes](./LINQ/mds/linq-notes.md) | `LINQ/mds/linq-notes.md` |
 
-<!--Query syntax vs method syntax, deferred execution, and real-world usage.-->
+Query syntax vs method syntax, deferred execution, and real-world usage.
 
 **[Back to Top](#table-of-contents)**
 
 ---
-## Author
-
-**Mohamed Maher** | Junior SoftwareEngineer
