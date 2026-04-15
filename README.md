@@ -27,7 +27,8 @@ A comprehensive technical repository documenting advanced C# mechanics, .NET int
   - [3.2 Asynchronous Programming](#32-asynchronous-programming)
   - [3.3 Threading & Synchronization](#33-threading--synchronization)
   - [3.4 Memory & Performance](#34-memory--performance)-->
-- [4. LINQ](#4-linq)
+-[1. Advanced C#](#2-Advanced_C#)
+- [2. LINQ](#2-linq)
 <!--
 - [5. Database Architecture](#5-database-architecture)
   - [5.1 Design & Structure](#51-design--structure)
