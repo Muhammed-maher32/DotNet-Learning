@@ -26,7 +26,7 @@ List<string> names = new();
 //List<T> Class
 //Same structure → different types
 ```
-*List:* [official_dotnet_repo] (https://github.com/dotnet/dotnet/blob/b0f34d51fccc69fd334253924abd8d6853fad7aa/src/runtime/src/libraries/System.Private.CoreLib/src/System/Collections/Generic/List.cs)
+*List:* [official_dotnet_repo](https://github.com/dotnet/dotnet/blob/b0f34d51fccc69fd334253924abd8d6853fad7aa/src/runtime/src/libraries/System.Private.CoreLib/src/System/Collections/Generic/List.cs)
 
 
 ---
