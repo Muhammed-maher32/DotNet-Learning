@@ -9,7 +9,7 @@ It allows you to pass methods as parameters.
 
 > a variable that holds a function
 
-*Official_doc:* -> [open](https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/delegates/)
+*Official_doc:* -> [Open](https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/delegates/)
 
 
 ---
