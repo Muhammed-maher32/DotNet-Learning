@@ -44,6 +44,20 @@ Language Integrated Query and data transformation.
 
 ---
 
+## 3. EF Core
+
+Entity Framework Core notes and concepts.
+
+### Topics
+
+| Topic               | Link                                                                 |
+| ------------------- | -------------------------------------------------------------------- |
+| Important Intro     | [Open](./Ef-Core/mds/Important_Introduction.md)                      |
+
+**[Back to Top](#table-of-contents)**
+
+---
+
 ## Why This Repo
 
 IDK WHHHY ACTUALLY, I JUST WANTED TO DOCUMENT MY JOURNEY IN BACKEND AND I HOPE SOMEONE FIND IT AND IT HELPS HIM!! <3
