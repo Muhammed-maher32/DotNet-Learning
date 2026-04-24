@@ -53,7 +53,8 @@ Entity Framework Core notes and concepts.
 | Topic               | Link                                                                 |
 | ------------------- | -------------------------------------------------------------------- |
 | Important Intro     | [Open](./Ef-Core/mds/Important_Introduction.md)                      |
-| Configurations&
+| 
+Configurations&
 | Relationships       | [Open](./Ef-Core/mds/Configurations&Relationships.md)                |
 
 **[Back to Top](#table-of-contents)**
