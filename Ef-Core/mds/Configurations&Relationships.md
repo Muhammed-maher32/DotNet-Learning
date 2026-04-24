@@ -1,6 +1,6 @@
 # EF CORE - Relationships & Configuration
 
-**Important =>** [Introduction](https://github.com/Muhammed-maher32/DotNet-Learning/blob/main/Ef-Core/mds/Important_Introduction.md])
+**Important =>** [Introduction](https://github.com/Muhammed-maher32/DotNet-Learning/blob/main/Ef-Core/mds/Important_Introduction.md)
 ## Revision on Relationships
 
 > **1 - 1:** Take foreign key from one table to another
