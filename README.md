@@ -8,6 +8,8 @@ A repository for my .NET backend learning journey.
 
 * [1. Advanced C#](#1-advanced-c)
 * [2. LINQ](#2-linq)
+* [3. EF Core](#3-ef-core)
+* [4. Core Concepts](#4-core-concepts)
 * [Why This Repo](#why-this-repo)
 * [Author](#author)
 
@@ -58,7 +60,19 @@ Entity Framework Core notes and concepts.
 **[Back to Top](#table-of-contents)**
 
 ---
+## 4. Core Concepts
 
+Web and backend core concepts.
+
+### Topics
+
+| Topic            | Link                                                    |
+| ---------------- | ------------------------------------------------------- |
+| Web Fundamentals | [Open](./CoreConcepts/mds/Web%20Fundamentals.md)        |
+
+**[Back to Top](#table-of-contents)**
+
+---
 ## Why This Repo
 
 IDK WHHHY ACTUALLY, I JUST WANTED TO DOCUMENT MY JOURNEY IN BACKEND AND I HOPE SOMEONE FIND IT AND IT HELPS HIM!! <3
