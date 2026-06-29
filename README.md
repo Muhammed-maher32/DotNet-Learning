@@ -1,88 +1,69 @@
-# DotNet-Learning
+# 📘 .NET Learning Notes
 
-A repository for my .NET backend learning journey.
+> My personal notebook for the .NET backend journey — concise, practical notes on C#, LINQ, EF Core, and ASP.NET Core, written to be re-read and revised.
 
----
-
-## Table of Contents
-
-* [1. Advanced C#](#1-advanced-c)
-* [2. LINQ](#2-linq)
-* [3. EF Core](#3-ef-core)
-* [4. Core Concepts](#4-core-concepts)
-* [Why This Repo](#why-this-repo)
-* [Author](#author)
+Each note is self-contained: a topic explained in plain language, with minimal runnable examples, common mistakes, and "why it matters" context.
 
 ---
 
-## 1. Advanced C#
+## 🗺️ Contents
 
-Advanced C# topics and notes.
+A rough learning order — top to bottom is a sensible path, but each note stands on its own.
 
-### Topics
+### 1. Advanced C#
+Core language features every backend developer leans on.
 
-| Topic             | Link                                              |
-| ----------------- | ------------------------------------------------- |
-| Async Programming | [Open](./CSharp-Advanced/mds/AsyncProgramming.md) |
-| Delegates         | [Open](./CSharp-Advanced/mds/Delegates.md)        |
-| Generics          | [Open](./CSharp-Advanced/mds/Generics.md)         |
-| Collections       | [Open](./CSharp-Advanced/mds/Collections.md)      |
+| Topic | Notes |
+| ----- | ----- |
+| Collections | [Open](./CSharp-Advanced/collections.md) |
+| Generics | [Open](./CSharp-Advanced/generics.md) |
+| Delegates | [Open](./CSharp-Advanced/delegates.md) |
+| Async Programming | [Open](./CSharp-Advanced/async-programming.md) |
 
-**[Back to Top](#table-of-contents)**
+### 2. LINQ
+Querying and transforming data declaratively.
 
----
+| Topic | Notes |
+| ----- | ----- |
+| LINQ Fundamentals | [Open](./LINQ/linq.md) |
 
-## 2. LINQ
+### 3. EF Core
+Talking to a database through objects with Entity Framework Core.
 
-Language Integrated Query and data transformation.
+| Topic | Notes |
+| ----- | ----- |
+| Introduction (DbContext, DbSet, Migrations, CRUD) | [Open](./EF-Core/introduction.md) |
+| Configurations & Relationships | [Open](./EF-Core/configurations-and-relationships.md) |
 
-### Topics
+### 4. Web & ASP.NET Core
+How the web works and how ASP.NET Core handles a request.
 
-| Topic      | Link                             |
-| ---------- | -------------------------------- |
-| LINQ Notes | [Open](./LINQ/mds/linq-notes.md) |
-
-**[Back to Top](#table-of-contents)**
-
----
-
-## 3. EF Core
-
-Entity Framework Core notes and concepts.
-
-### Topics
-
-| Topic               | Link                                                                 |
-| ------------------- | -------------------------------------------------------------------- |
-| Important Intro     | [Open](./Ef-Core/mds/Important_Introduction.md)                      |
-| Configurations & Relationships       | [Open](./Ef-Core/mds/Configurations&Relationships.md) |                |
-
-**[Back to Top](#table-of-contents)**
-
----
-## 4. Core Concepts
-
-Web and backend core concepts.
-
-### Topics
-
-| Topic            | Link                                                          |
-| ---------------- | ------------------------------------------------------------- |
-| Web Fundamentals | [Open](./.NET-WEB-Basics/mds/Web%20Fundamentals.md)           | 
-  ASP.NET Concepts | [Open](./.NET-WEB-Basics/mds/ASP.NET%20Core%20Fundamentals.md)|
-**[Back to Top](#table-of-contents)**
-
----
-## Why This Repo
-
-IDK WHHHY ACTUALLY, I JUST WANTED TO DOCUMENT MY JOURNEY IN BACKEND AND I HOPE SOMEONE FIND IT AND IT HELPS HIM!! <3
-
-**[Back to Top](#table-of-contents)**
+| Topic | Notes |
+| ----- | ----- |
+| Web Fundamentals (DNS, TCP/IP, HTTP) | [Open](./Web-Basics/web-fundamentals.md) |
+| ASP.NET Core Fundamentals | [Open](./Web-Basics/aspnet-core-fundamentals.md) |
 
 ---
 
-## Author
+## 📂 Repository Structure
 
-**Mohamed Maher**
+```
+DotNet-Learning/
+├── CSharp-Advanced/     # collections, generics, delegates, async
+├── LINQ/                # LINQ fundamentals
+├── EF-Core/             # introduction, configurations & relationships
+├── Web-Basics/          # web fundamentals, ASP.NET Core fundamentals
+└── README.md
+```
 
-**[Back to Top](#table-of-contents)**
+---
+
+## 🎯 Why This Repo
+
+To document my backend learning in my own words — the act of writing a topic down is how I make sure I actually understand it. If you stumbled in here and it helps you too, even better. 🙌
+
+---
+
+## ✍️ Author
+
+**Mohamed Maher** — [GitHub](https://github.com/Muhammed-maher32)

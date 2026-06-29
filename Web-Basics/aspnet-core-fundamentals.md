@@ -1,3 +1,9 @@
+# ASP.NET Core Fundamentals
+
+> Practical notes on how an ASP.NET Core app is structured and how it handles a request — configuration, middleware, routing, controllers, model binding, validation, and results.
+
+---
+
 ### 1. ASP.NET Project Structure
 
 When you create a new ASP.NET Core project, here's what you actually care about:
