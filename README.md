@@ -66,10 +66,10 @@ Web and backend core concepts.
 
 ### Topics
 
-| Topic            | Link                                                    |
-| ---------------- | ------------------------------------------------------- |
-| Web Fundamentals | [Open](./.NET-WEB-Basics/mds/Web%20Fundamentals.md)     |
-  ASP.NET Concepts | [Open](./.NET-WEB-Basics/mds/ASP.NET Core Fundamentals.md)
+| Topic            | Link                                                          |
+| ---------------- | ------------------------------------------------------------- |
+| Web Fundamentals | [Open](./.NET-WEB-Basics/mds/Web%20Fundamentals.md)           | 
+  ASP.NET Concepts | [Open](./.NET-WEB-Basics/mds/ASP.NET%20Core%20Fundamentals.md)|
 **[Back to Top](#table-of-contents)**
 
 ---
