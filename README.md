@@ -20,6 +20,9 @@ Core language features every backend developer leans on.
 | Delegates | [Open](./CSharp-Advanced/delegates.md) |
 | Events | [Open](./CSharp-Advanced/events.md) |
 | Records & Value vs Reference | [Open](./CSharp-Advanced/records.md) |
+| Exception Handling | [Open](./CSharp-Advanced/exceptions.md) |
+| Pattern Matching | [Open](./CSharp-Advanced/pattern-matching.md) |
+| Nullable Reference Types | [Open](./CSharp-Advanced/nullable-reference-types.md) |
 | Async Programming | [Open](./CSharp-Advanced/async-programming.md) |
 
 ### 2. LINQ
@@ -46,6 +49,8 @@ How the web works and how ASP.NET Core handles a request.
 | Web Fundamentals (DNS, TCP/IP, HTTP) | [Open](./Web-Basics/web-fundamentals.md) |
 | ASP.NET Core Fundamentals | [Open](./Web-Basics/aspnet-core-fundamentals.md) |
 | Dependency Injection & Service Lifetimes | [Open](./Web-Basics/dependency-injection.md) |
+| Filters | [Open](./Web-Basics/filters.md) |
+| Authentication & Authorization (JWT, Identity) | [Open](./Web-Basics/authentication-and-authorization.md) |
 
 ### 5. Design Patterns
 Patterns I picked up building real projects.
@@ -61,10 +66,11 @@ Patterns I picked up building real projects.
 
 ```
 DotNet-Learning/
-├── CSharp-Advanced/     # collections, generics, delegates, events, records, async
+├── CSharp-Advanced/     # collections, generics, delegates, events, records,
+│                        #   exceptions, pattern matching, nullable refs, async
 ├── LINQ/                # LINQ fundamentals
 ├── EF-Core/             # introduction, configurations & relationships, loading & tracking
-├── Web-Basics/          # web fundamentals, ASP.NET Core fundamentals, DI
+├── Web-Basics/          # web fundamentals, ASP.NET Core, DI, filters, auth
 ├── design-patterns/     # repository & unit of work, result pattern
 └── README.md
 ```
