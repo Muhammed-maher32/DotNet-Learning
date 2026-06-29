@@ -1,6 +1,6 @@
 # 📘 .NET Learning Notes
 
-> My personal notebook for the .NET backend journey — concise, practical notes on C#, LINQ, EF Core, and ASP.NET Core, written to be re-read and revised.
+> My personal notebook for the .NET backend journey. Concise, practical notes on C#, LINQ, EF Core, and ASP.NET Core, written to be re-read and revised.
 
 Each note is self-contained: a topic explained in plain language, with minimal runnable examples, common mistakes, and "why it matters" context.
 
@@ -8,7 +8,7 @@ Each note is self-contained: a topic explained in plain language, with minimal r
 
 ## 🗺️ Contents
 
-A rough learning order — top to bottom is a sensible path, but each note stands on its own.
+A rough learning order. Top to bottom is a sensible path, but each note stands on its own.
 
 ### 1. Advanced C#
 Core language features every backend developer leans on.
@@ -49,7 +49,9 @@ How the web works and how ASP.NET Core handles a request.
 | Web Fundamentals (DNS, TCP/IP, HTTP) | [Open](./Web-Basics/web-fundamentals.md) |
 | ASP.NET Core Fundamentals | [Open](./Web-Basics/aspnet-core-fundamentals.md) |
 | Dependency Injection & Service Lifetimes | [Open](./Web-Basics/dependency-injection.md) |
+| Middleware & Request Pipeline | [Open](./Web-Basics/middleware.md) |
 | Filters | [Open](./Web-Basics/filters.md) |
+| Validation | [Open](./Web-Basics/validation.md) |
 | Authentication & Authorization (JWT, Identity) | [Open](./Web-Basics/authentication-and-authorization.md) |
 
 ### 5. Design Patterns
@@ -59,6 +61,13 @@ Patterns I picked up building real projects.
 | ----- | ----- |
 | Repository & Unit of Work | [Open](./design-patterns/repository-and-unit-of-work.md) |
 | Result Pattern | [Open](./design-patterns/result-pattern.md) |
+| DTOs & AutoMapper | [Open](./design-patterns/dtos-and-automapper.md) |
+
+---
+
+## 📝 To-Do (planned notes)
+
+- [ ] EF Core: Transactions & Concurrency (explicit transactions, optimistic concurrency with rowversion, handling `DbUpdateConcurrencyException`)
 
 ---
 
@@ -70,8 +79,9 @@ DotNet-Learning/
 │                        #   exceptions, pattern matching, nullable refs, async
 ├── LINQ/                # LINQ fundamentals
 ├── EF-Core/             # introduction, configurations & relationships, loading & tracking
-├── Web-Basics/          # web fundamentals, ASP.NET Core, DI, filters, auth
-├── design-patterns/     # repository & unit of work, result pattern
+├── Web-Basics/          # web fundamentals, ASP.NET Core, DI, middleware,
+│                        #   filters, validation, auth
+├── design-patterns/     # repository & unit of work, result pattern, DTOs & AutoMapper
 └── README.md
 ```
 
@@ -79,10 +89,10 @@ DotNet-Learning/
 
 ## 🎯 Why This Repo
 
-To document my backend learning in my own words — the act of writing a topic down is how I make sure I actually understand it. If you stumbled in here and it helps you too, even better. 🙌
+To document my backend learning in my own words. The act of writing a topic down is how I make sure I actually understand it. If you stumbled in here and it helps you too, even better. 🙌
 
 ---
 
 ## ✍️ Author
 
-**Mohamed Maher** — [GitHub](https://github.com/Muhammed-maher32)
+**Mohamed Maher** ([GitHub](https://github.com/Muhammed-maher32))

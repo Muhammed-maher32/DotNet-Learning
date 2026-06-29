@@ -6,7 +6,7 @@
 
 ```csharp
 Task<string> task = httpClient.GetStringAsync(url);
-// I don't have the string yet —
+// I don't have the string yet.
 // I have a Task<string> (a promise of a future result)
 
 
@@ -20,13 +20,13 @@ string result = await httpClient.GetStringAsync(url);
 
 ## The Core Idea
 
-* `Task` / `Task<T>` is a type that represents an **asynchronous operation** — work that is in progress.
+* `Task` / `Task<T>` is a type that represents an **asynchronous operation** (work that is in progress).
 * It answers "what is running now?" When it finishes it either returns a **result** or throws an **exception**.
 
 ```csharp
 Task<int> task = GetNumberAsync();
 
-int x = task;        // ❌ invalid — a Task<int> is not an int.
+int x = task;        // ❌ invalid: a Task<int> is not an int.
                      // This means "give me the result without waiting for it to complete!"
 
 int x = await task;  // ✅ wait for completion, then unwrap the int.
@@ -67,7 +67,7 @@ public async Task MyMethod()
 // The method pauses at the await and returns control to the caller.
 // The thread is released.
 // The async operation continues in the background.
-// When it completes, the method resumes from this point —
+// When it completes, the method resumes from this point,
 // possibly on the same thread, possibly not.
 ```
 
@@ -135,7 +135,7 @@ A task moves through several states:
 
 * Exceptions are **stored inside the Task**.
 * `await` unwraps and rethrows the exception.
-* `.Result` and `.Wait()` wrap exceptions in an `AggregateException` (and can deadlock — avoid them).
+* `.Result` and `.Wait()` wrap exceptions in an `AggregateException` (and can deadlock, avoid them).
 * With `Task.WhenAll`, multiple exceptions can be aggregated.
 
 ---
@@ -210,5 +210,5 @@ Dangerous because:
 ## ValueTask Note
 
 * Reduces allocations for methods that often complete **synchronously**.
-* Not always better than `Task` — it has usage rules (don't await it twice).
+* Not always better than `Task`, it has usage rules (don't await it twice).
 * Use only in performance-critical paths.
