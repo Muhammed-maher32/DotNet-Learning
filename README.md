@@ -18,6 +18,8 @@ Core language features every backend developer leans on.
 | Collections | [Open](./CSharp-Advanced/collections.md) |
 | Generics | [Open](./CSharp-Advanced/generics.md) |
 | Delegates | [Open](./CSharp-Advanced/delegates.md) |
+| Events | [Open](./CSharp-Advanced/events.md) |
+| Records & Value vs Reference | [Open](./CSharp-Advanced/records.md) |
 | Async Programming | [Open](./CSharp-Advanced/async-programming.md) |
 
 ### 2. LINQ
@@ -34,6 +36,7 @@ Talking to a database through objects with Entity Framework Core.
 | ----- | ----- |
 | Introduction (DbContext, DbSet, Migrations, CRUD) | [Open](./EF-Core/introduction.md) |
 | Configurations & Relationships | [Open](./EF-Core/configurations-and-relationships.md) |
+| Loading Related Data & Tracking (N+1, AsNoTracking) | [Open](./EF-Core/loading-and-tracking.md) |
 
 ### 4. Web & ASP.NET Core
 How the web works and how ASP.NET Core handles a request.
@@ -42,6 +45,15 @@ How the web works and how ASP.NET Core handles a request.
 | ----- | ----- |
 | Web Fundamentals (DNS, TCP/IP, HTTP) | [Open](./Web-Basics/web-fundamentals.md) |
 | ASP.NET Core Fundamentals | [Open](./Web-Basics/aspnet-core-fundamentals.md) |
+| Dependency Injection & Service Lifetimes | [Open](./Web-Basics/dependency-injection.md) |
+
+### 5. Design Patterns
+Patterns I picked up building real projects.
+
+| Topic | Notes |
+| ----- | ----- |
+| Repository & Unit of Work | [Open](./design-patterns/repository-and-unit-of-work.md) |
+| Result Pattern | [Open](./design-patterns/result-pattern.md) |
 
 ---
 
@@ -49,10 +61,11 @@ How the web works and how ASP.NET Core handles a request.
 
 ```
 DotNet-Learning/
-├── CSharp-Advanced/     # collections, generics, delegates, async
+├── CSharp-Advanced/     # collections, generics, delegates, events, records, async
 ├── LINQ/                # LINQ fundamentals
-├── EF-Core/             # introduction, configurations & relationships
-├── Web-Basics/          # web fundamentals, ASP.NET Core fundamentals
+├── EF-Core/             # introduction, configurations & relationships, loading & tracking
+├── Web-Basics/          # web fundamentals, ASP.NET Core fundamentals, DI
+├── design-patterns/     # repository & unit of work, result pattern
 └── README.md
 ```
 
