@@ -15,51 +15,51 @@ Core language features every backend developer leans on.
 
 | Topic | Notes |
 | ----- | ----- |
-| Collections | [Open](./CSharp-Advanced/collections.md) |
-| Generics | [Open](./CSharp-Advanced/generics.md) |
-| Delegates | [Open](./CSharp-Advanced/delegates.md) |
-| Events | [Open](./CSharp-Advanced/events.md) |
-| Records & Value vs Reference | [Open](./CSharp-Advanced/records.md) |
-| Exception Handling | [Open](./CSharp-Advanced/exceptions.md) |
-| Pattern Matching | [Open](./CSharp-Advanced/pattern-matching.md) |
-| Nullable Reference Types | [Open](./CSharp-Advanced/nullable-reference-types.md) |
-| Async Programming | [Open](./CSharp-Advanced/async-programming.md) |
+| Collections | [Open](./1.CSharp-Advanced/collections.md) |
+| Generics | [Open](./1.CSharp-Advanced/generics.md) |
+| Delegates | [Open](./1.CSharp-Advanced/delegates.md) |
+| Events | [Open](./1.CSharp-Advanced/events.md) |
+| Records & Value vs Reference | [Open](./1.CSharp-Advanced/records.md) |
+| Exception Handling | [Open](./1.CSharp-Advanced/exceptions.md) |
+| Pattern Matching | [Open](./1.CSharp-Advanced/pattern-matching.md) |
+| Nullable Reference Types | [Open](./1.CSharp-Advanced/nullable-reference-types.md) |
+| Async Programming | [Open](./1.CSharp-Advanced/async-programming.md) |
 
-### 2. LINQ
-Querying and transforming data declaratively.
-
-| Topic | Notes |
-| ----- | ----- |
-| LINQ Fundamentals | [Open](./LINQ/linq.md) |
-
-### 3. EF Core
+### 2. EF Core
 Talking to a database through objects with Entity Framework Core.
 
 | Topic | Notes |
 | ----- | ----- |
-| Introduction (DbContext, DbSet, Migrations, CRUD) | [Open](./EF-Core/introduction.md) |
-| Configurations & Relationships | [Open](./EF-Core/configurations-and-relationships.md) |
-| Loading Related Data & Tracking (N+1, AsNoTracking) | [Open](./EF-Core/loading-and-tracking.md) |
+| Introduction (DbContext, DbSet, Migrations, CRUD) | [Open](./2.EF-Core/introduction.md) |
+| Configurations & Relationships | [Open](./2.EF-Core/configurations-and-relationships.md) |
+| Loading Related Data & Tracking (N+1, AsNoTracking) | [Open](./2.EF-Core/loading-and-tracking.md) |
+
+### 3. LINQ
+Querying and transforming data declaratively.
+
+| Topic | Notes |
+| ----- | ----- |
+| LINQ Fundamentals | [Open](./3.LINQ/linq.md) |
 
 ### 4. Web & ASP.NET Core
 How the web works and how ASP.NET Core handles a request.
 
 | Topic | Notes |
 | ----- | ----- |
-| Web Fundamentals (DNS, TCP/IP, HTTP) | [Open](./Web-Basics/web-fundamentals.md) |
-| ASP.NET Core Fundamentals | [Open](./Web-Basics/aspnet-core-fundamentals.md) |
-| Dependency Injection & Service Lifetimes | [Open](./Web-Basics/dependency-injection.md) |
-| Middleware & Request Pipeline | [Open](./Web-Basics/middleware.md) |
-| Filters | [Open](./Web-Basics/filters.md) |
-| Validation | [Open](./Web-Basics/validation.md) |
-| Authentication & Authorization (JWT, Identity) | [Open](./Web-Basics/authentication-and-authorization.md) |
+| Web Fundamentals (DNS, TCP/IP, HTTP) | [Open](./4.Web-Basics/web-fundamentals.md) |
+| ASP.NET Core Fundamentals | [Open](./4.Web-Basics/aspnet-core-fundamentals.md) |
+| Dependency Injection & Service Lifetimes | [Open](./4.Web-Basics/dependency-injection.md) |
+| Middleware & Request Pipeline | [Open](./4.Web-Basics/middleware.md) |
+| Filters | [Open](./4.Web-Basics/filters.md) |
+| Validation | [Open](./4.Web-Basics/validation.md) |
+| Authentication & Authorization (JWT, Identity) | [Open](./4.Web-Basics/authentication-and-authorization.md) |
 
 ### 5. MVC
 The MVC pattern in ASP.NET Core: controllers, views, Razor, and the full request flow.
 
 | Topic | Notes |
 | ----- | ----- |
-| MVC (controllers, views, Razor, the full flow) | [Open](./MVC/mvc.md) |
+| MVC (controllers, views, Razor, the full flow) | [Open](./5.MVC/mvc.md) |
 
 **Worked example:**
 
@@ -72,9 +72,9 @@ Patterns I picked up building real projects.
 
 | Topic | Notes |
 | ----- | ----- |
-| Repository & Unit of Work | [Open](./design-patterns/repository-and-unit-of-work.md) |
-| Result Pattern | [Open](./design-patterns/result-pattern.md) |
-| DTOs & AutoMapper | [Open](./design-patterns/dtos-and-automapper.md) |
+| Repository & Unit of Work | [Open](./6.design-patterns/repository-and-unit-of-work.md) |
+| Result Pattern | [Open](./6.design-patterns/result-pattern.md) |
+| DTOs & AutoMapper | [Open](./6.design-patterns/dtos-and-automapper.md) |
 
 ---
 
@@ -89,14 +89,14 @@ Patterns I picked up building real projects.
 
 ```
 DotNet-Learning/
-├── CSharp-Advanced/     # collections, generics, delegates, events, records,
+├── 1.CSharp-Advanced/   # collections, generics, delegates, events, records,
 │                        #   exceptions, pattern matching, nullable refs, async
-├── LINQ/                # LINQ fundamentals
-├── EF-Core/             # introduction, configurations & relationships, loading & tracking
-├── Web-Basics/          # web fundamentals, ASP.NET Core, DI, middleware,
+├── 2.EF-Core/           # introduction, configurations & relationships, loading & tracking
+├── 3.LINQ/              # LINQ fundamentals
+├── 4.Web-Basics/        # web fundamentals, ASP.NET Core, DI, middleware,
 │                        #   filters, validation, auth
-├── MVC/                 # MVC pattern + full request flow (references GymSystem)
-├── design-patterns/     # repository & unit of work, result pattern, DTOs & AutoMapper
+├── 5.MVC/               # MVC pattern + full request flow (references GymSystem)
+├── 6.design-patterns/   # repository & unit of work, result pattern, DTOs & AutoMapper
 └── README.md
 ```
 
