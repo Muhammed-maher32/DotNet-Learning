@@ -59,7 +59,7 @@ The MVC pattern in ASP.NET Core: controllers, views, Razor, and the full request
 
 | Topic | Notes |
 | ----- | ----- |
-| MVC (controllers, views, Razor, the full flow) | [Open](./MVC/mds/mvc.md) |
+| MVC (controllers, views, Razor, the full flow) | [Open](./MVC/mvc.md) |
 
 **Worked example:**
 
