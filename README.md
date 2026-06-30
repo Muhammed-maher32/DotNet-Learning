@@ -48,12 +48,18 @@ How the web works and how ASP.NET Core handles a request.
 | ----- | ----- |
 | Web Fundamentals (DNS, TCP/IP, HTTP) | [Open](./Web-Basics/web-fundamentals.md) |
 | ASP.NET Core Fundamentals | [Open](./Web-Basics/aspnet-core-fundamentals.md) |
-| MVC (controllers, views, Razor, the full flow) | [Open](./Web-Basics/mvc.md) |
 | Dependency Injection & Service Lifetimes | [Open](./Web-Basics/dependency-injection.md) |
 | Middleware & Request Pipeline | [Open](./Web-Basics/middleware.md) |
 | Filters | [Open](./Web-Basics/filters.md) |
 | Validation | [Open](./Web-Basics/validation.md) |
 | Authentication & Authorization (JWT, Identity) | [Open](./Web-Basics/authentication-and-authorization.md) |
+
+### 5. MVC
+The MVC pattern in ASP.NET Core: controllers, views, Razor, and the full request flow.
+
+| Topic | Notes |
+| ----- | ----- |
+| MVC (controllers, views, Razor, the full flow) | [Open](./MVC/mds/mvc.md) |
 
 **Worked example:**
 
@@ -61,7 +67,7 @@ How the web works and how ASP.NET Core handles a request.
 | ------- | ---------- | ---- |
 | GymSystem | A full ASP.NET Core **MVC** project (3-layer: PL / BLL / DAL) that the MVC note references throughout | [Repo](https://github.com/Muhammed-maher32/GymManagementSystem) |
 
-### 5. Design Patterns
+### 6. Design Patterns
 Patterns I picked up building real projects.
 
 | Topic | Notes |
@@ -87,8 +93,9 @@ DotNet-Learning/
 │                        #   exceptions, pattern matching, nullable refs, async
 ├── LINQ/                # LINQ fundamentals
 ├── EF-Core/             # introduction, configurations & relationships, loading & tracking
-├── Web-Basics/          # web fundamentals, ASP.NET Core, MVC, DI, middleware,
+├── Web-Basics/          # web fundamentals, ASP.NET Core, DI, middleware,
 │                        #   filters, validation, auth
+├── MVC/                 # MVC pattern + full request flow (references GymSystem)
 ├── design-patterns/     # repository & unit of work, result pattern, DTOs & AutoMapper
 └── README.md
 ```
