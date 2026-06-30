@@ -1,6 +1,6 @@
 # ASP.NET Core Fundamentals
 
-> Practical notes on how an ASP.NET Core app is structured and how it handles a request — configuration, middleware, routing, controllers, model binding, validation, and results.
+> Practical notes on how an ASP.NET Core app is structured and how it handles a request: configuration, middleware, routing, controllers, model binding, validation, and results.
 
 ---
 
@@ -20,7 +20,7 @@ MyProject/
     └── launchSettings.json  ← local dev settings (ports, env vars)
 ```
 
-`Program.cs` is where the magic starts — you register services into DI, configure the middleware pipeline, and run the app. Everything else is just folders you put code in.
+`Program.cs` is where it all starts. You register services into DI, configure the middleware pipeline, and run the app. Everything else is just folders you put code in.
 
 ---
 ### 2. Configuration
@@ -75,7 +75,7 @@ public class AuthService(IOptions<JwtSettings> opts)
 ---
 ### 3. Middlewares
 
-Your request doesn't hit the controller directly. It passes through a **pipeline** of middlewares — each one can do something before passing it to the next, or short-circuit the whole thing.
+Your request doesn't hit the controller directly. It passes through a **pipeline** of middlewares, each one can do something before passing it to the next, or short-circuit the whole thing.
 
 ```
 Request → MW1 → MW2 → MW3 → Endpoint
@@ -133,7 +133,7 @@ app.MapControllerRoute(
     pattern: "{controller=Home}/{action=Index}/{id?}");
 ```
 
-**Attribute routing** (Web API style — what you'll use 99% of the time):
+**Attribute routing** (Web API style, what you'll use 99% of the time):
 
 ```csharp
 [Route("api/[controller]")]
@@ -235,7 +235,7 @@ public IActionResult Create([FromBody] CreateProductDto dto)
 }
 ```
 
-With `[ApiController]` — you don't even need to check. It automatically returns `400 Bad Request` with validation errors if `ModelState` is invalid. The check is done for you.
+With `[ApiController]` you don't even need to check. It automatically returns `400 Bad Request` with validation errors if `ModelState` is invalid. The check is done for you.
 For complex validation that doesn't fit in attributes, implement `IValidatableObject` on the model or use FluentValidation (much cleaner for real projects).
 
 ---
@@ -255,7 +255,7 @@ return NotFound();                        // 404
 return StatusCode(500, "something broke");// custom
 ```
 
-Prefer `ActionResult<T>` over `IActionResult` when you can — it gives you type safety and Swagger picks up the response type automatically:
+Prefer `ActionResult<T>` over `IActionResult` when you can, it gives you type safety and Swagger picks up the response type automatically:
 
 ```csharp
 [HttpGet("{id}")]

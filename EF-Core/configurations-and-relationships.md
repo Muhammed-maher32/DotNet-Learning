@@ -46,7 +46,7 @@ public string Name { get; set; }
 public Category Category { get; set; }
 ```
 
-> **Limitation:** Cannot configure composite keys — use Fluent API for that.
+> **Limitation:** Cannot configure composite keys, use Fluent API for that.
 
 ---
 
@@ -54,8 +54,8 @@ public Category Category { get; set; }
 
 You can write it in two places:
 
-1. `OnModelCreating()` — works but not recommended for large projects.
-2. `IEntityTypeConfiguration<T>` classes — preferred, gives you more control and keeps configuration organized.
+1. `OnModelCreating()`, works but not recommended for large projects.
+2. `IEntityTypeConfiguration<T>` classes, preferred, gives you more control and keeps configuration organized.
 
 ```csharp
 // IEntityTypeConfiguration<T> example (recommended)
@@ -85,14 +85,14 @@ protected override void OnModelCreating(ModelBuilder modelBuilder)
 **1. Primary Keys**
 
 ```csharp
-// Basic primary key (Id is already detected by convention — just for illustration)
+// Basic primary key (Id is already detected by convention, just for illustration)
 builder.HasKey(p => p.Id);
 builder.Property(p => p.Id).ValueGeneratedOnAdd(); // Auto-increment
 ```
 
 **GUID as Primary Key**
 
-> Adds a layer of security — GUIDs are 16 bytes and not guessable.
+> Adds a layer of security, GUIDs are 16 bytes and not guessable.
 > However, random GUIDs cause index fragmentation in SQL Server.
 > `NEWSEQUENTIALID()` solves this by generating sequential GUIDs, which are safe for clustered indexes.
 
@@ -106,7 +106,7 @@ public class MyClass
 builder.Property(p => p.Id)
        .HasDefaultValueSql("NEWID()");
 
-// Better: sequential GUID — avoids index fragmentation in SQL Server
+// Better: sequential GUID, avoids index fragmentation in SQL Server
 builder.Property(p => p.Id)
        .HasDefaultValueSql("NEWSEQUENTIALID()");
 
@@ -124,7 +124,7 @@ public class OrderItem
     public int Quantity { get; set; }
 }
 
-// Fluent API — only way to define composite keys
+// Fluent API: only way to define composite keys
 builder.HasKey(ck => new { ck.OrderId, ck.ProductId });
 
 // [Key] annotation cannot define composite keys at all.
@@ -155,7 +155,7 @@ public class UserProfile
     public User User { get; set; }           // Navigation property
 }
 
-// Fluent API (mandatory to resolve ambiguity — specify which side holds the FK)
+// Fluent API (mandatory to resolve ambiguity: specify which side holds the FK)
 builder.HasOne(u => u.Profile)
        .WithOne(p => p.User)
        .HasForeignKey<UserProfile>(p => p.UserId);
@@ -185,7 +185,7 @@ public class Product
     public Category Category { get; set; }    // Navigation property
 }
 
-// Fluent API (optional — convention handles this, but explicit is clearer)
+// Fluent API (optional, convention handles this, but explicit is clearer)
 builder.HasOne(p => p.Category)
        .WithMany(c => c.Products)
        .HasForeignKey(p => p.CategoryId);
@@ -193,7 +193,7 @@ builder.HasOne(p => p.Category)
 
 ---
 
-### 3. Many-to-Many (Simple — No Payload)
+### 3. Many-to-Many (Simple, No Payload)
 
 EF Core automatically creates the join table. No extra data on the relationship.
 
@@ -258,7 +258,7 @@ public class Course
     public ICollection<Enrollment> Enrollments { get; set; }
 }
 
-// Fluent API — mandatory
+// Fluent API: mandatory
 builder.HasKey(e => new { e.StudentId, e.CourseId }); // Composite key for join entity
 ```
 
@@ -274,13 +274,13 @@ public class Employee
     public int Id { get; set; }
     public string Name { get; set; }
 
-    public int? ManagerId { get; set; }                   // Nullable — top-level managers have no manager
+    public int? ManagerId { get; set; }                   // Nullable: top-level managers have no manager
 
     public Employee? Manager { get; set; }                // Navigation to parent
     public ICollection<Employee> Subordinates { get; set; } // Navigation to children
 }
 
-// Fluent API — mandatory due to ambiguity
+// Fluent API: mandatory due to ambiguity
 builder.HasOne(e => e.Manager)
        .WithMany(e => e.Subordinates)
        .HasForeignKey(e => e.ManagerId)

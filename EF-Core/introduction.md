@@ -18,7 +18,7 @@ Instead of writing raw SQL for everything, you work with C# objects and let EF C
 
 ```csharp
 var command = new SqlCommand("SELECT Id, Name FROM Students", connection);
-// Raw SQL: no compile-time error checking — bugs appear only at runtime
+// Raw SQL: no compile-time error checking, bugs appear only at runtime
 var reader = command.ExecuteReader();
 
 while (reader.Read())
@@ -77,7 +77,7 @@ EF Core eliminates:
 
 ### Problem 3: Schema Changes
 
-When your model changes, EF Core updates the database schema using **migrations** — no manual `ALTER TABLE` scripts needed.
+When your model changes, EF Core updates the database schema using **migrations**, no manual `ALTER TABLE` scripts needed.
 
 ---
 
@@ -183,7 +183,7 @@ context.SaveChanges(); // Without this, nothing is inserted
 ### ❗ Avoid Long-Lived DbContext
 
 ```csharp
-// Bad — static/shared context
+// Bad: static/shared context
 public static AppDbContext context = new AppDbContext();
 ```
 
@@ -245,7 +245,7 @@ context.Students.Where(s => s.Name == "Ali").ToList(); // filtered SELECT
 
 ```csharp
 var query = context.Students.Where(s => s.Name == "Ali");
-// No SQL executed yet — query is just built
+// No SQL executed yet, query is just built
 
 var result = query.ToList();
 // SQL executes HERE
