@@ -68,6 +68,7 @@ Patterns I picked up building real projects.
 ## 📝 To-Do (planned notes)
 
 - [ ] EF Core: Transactions & Concurrency (explicit transactions, optimistic concurrency with rowversion, handling `DbUpdateConcurrencyException`)
+- [ ] Web API & REST (REST conventions, status codes, versioning, Swagger/OpenAPI, content negotiation)
 
 ---
 
