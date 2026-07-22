@@ -1,6 +1,6 @@
 # 📘 .NET Learning Notes
 
-> My personal notebook for the .NET backend journey. Concise, practical notes on C#, LINQ, EF Core, and ASP.NET Core, written to be re-read and revised.
+> My personal notebook for the .NET backend journey. Concise, practical notes on C#, LINQ, EF Core, ASP.NET Core, and architecture, written to be re-read and revised.
 
 Each note is self-contained: a topic explained in plain language, with minimal runnable examples, common mistakes, and "why it matters" context.
 
@@ -24,6 +24,9 @@ Core language features every backend developer leans on.
 | Pattern Matching | [Open](./1.CSharp-Advanced/pattern-matching.md) |
 | Nullable Reference Types | [Open](./1.CSharp-Advanced/nullable-reference-types.md) |
 | Async Programming | [Open](./1.CSharp-Advanced/async-programming.md) |
+| Iterators & yield | [Open](./1.CSharp-Advanced/iterators-and-yield.md) |
+| Reflection & Attributes | [Open](./1.CSharp-Advanced/reflection-and-attributes.md) |
+| Span\<T\> & Memory\<T\> | [Open](./1.CSharp-Advanced/span-and-memory.md) |
 
 ### 2. EF Core
 Talking to a database through objects with Entity Framework Core.
@@ -33,6 +36,8 @@ Talking to a database through objects with Entity Framework Core.
 | Introduction (DbContext, DbSet, Migrations, CRUD) | [Open](./2.EF-Core/introduction.md) |
 | Configurations & Relationships | [Open](./2.EF-Core/configurations-and-relationships.md) |
 | Loading Related Data & Tracking (N+1, AsNoTracking) | [Open](./2.EF-Core/loading-and-tracking.md) |
+| Transactions & Concurrency | [Open](./2.EF-Core/transactions-and-concurrency.md) |
+| Performance & Advanced Queries | [Open](./2.EF-Core/performance-and-advanced-queries.md) |
 
 ### 3. LINQ
 Querying and transforming data declaratively.
@@ -40,6 +45,8 @@ Querying and transforming data declaratively.
 | Topic | Notes |
 | ----- | ----- |
 | LINQ Fundamentals | [Open](./3.LINQ/linq.md) |
+| Advanced LINQ (GroupBy, Join, SelectMany, Aggregate) | [Open](./3.LINQ/linq-advanced.md) |
+| IQueryable vs IEnumerable | [Open](./3.LINQ/iqueryable-vs-ienumerable.md) |
 
 ### 4. Web & ASP.NET Core
 How the web works and how ASP.NET Core handles a request.
@@ -60,6 +67,7 @@ The MVC pattern in ASP.NET Core: controllers, views, Razor, and the full request
 | Topic | Notes |
 | ----- | ----- |
 | MVC (controllers, views, Razor, the full flow) | [Open](./5.MVC/mvc.md) |
+| Views & Razor Deep Dive (tag helpers, partials, view components) | [Open](./5.MVC/views-and-razor-deep-dive.md) |
 
 **Worked example:**
 
@@ -72,16 +80,34 @@ Patterns I picked up building real projects.
 
 | Topic | Notes |
 | ----- | ----- |
-| Repository & Unit of Work | [Open](./6.design-patterns/repository-and-unit-of-work.md) |
-| Result Pattern | [Open](./6.design-patterns/result-pattern.md) |
-| DTOs & AutoMapper | [Open](./6.design-patterns/dtos-and-automapper.md) |
+| Repository & Unit of Work | [Open](./6.Design-Patterns/repository-and-unit-of-work.md) |
+| Result Pattern | [Open](./6.Design-Patterns/result-pattern.md) |
+| DTOs & AutoMapper | [Open](./6.Design-Patterns/dtos-and-automapper.md) |
+| Options Pattern | [Open](./6.Design-Patterns/options-pattern.md) |
+| Factory & Strategy | [Open](./6.Design-Patterns/factory-and-strategy.md) |
+| Decorator & Caching | [Open](./6.Design-Patterns/decorator-and-caching.md) |
+| CQRS & MediatR | [Open](./6.Design-Patterns/cqrs-and-mediatr.md) |
 
----
+### 7. Web API
+Building HTTP APIs the right way.
 
-## 📝 To-Do (planned notes)
+| Topic | Notes |
+| ----- | ----- |
+| REST & API Design (conventions, status codes, versioning) | [Open](./7.Web-API/rest-and-api-design.md) |
+| Swagger & OpenAPI | [Open](./7.Web-API/swagger-and-openapi.md) |
+| Minimal APIs | [Open](./7.Web-API/minimal-apis.md) |
+| Error Handling & ProblemDetails | [Open](./7.Web-API/error-handling-and-problem-details.md) |
 
-- [ ] EF Core: Transactions & Concurrency (explicit transactions, optimistic concurrency with rowversion, handling `DbUpdateConcurrencyException`)
-- [ ] Web API & REST (REST conventions, status codes, versioning, Swagger/OpenAPI, content negotiation)
+### 8. Architecture
+How to structure a whole application, not just one class.
+
+| Topic | Notes |
+| ----- | ----- |
+| Architecture Styles (monolith, n-tier, vertical slice, microservices) | [Open](./8.Architecture/architecture-styles.md) |
+| Onion Architecture | [Open](./8.Architecture/onion-architecture.md) |
+| Clean Architecture | [Open](./8.Architecture/clean-architecture.md) |
+| Logging & Serilog | [Open](./8.Architecture/logging-and-serilog.md) |
+| Background Jobs | [Open](./8.Architecture/background-jobs.md) |
 
 ---
 
@@ -90,13 +116,18 @@ Patterns I picked up building real projects.
 ```
 DotNet-Learning/
 ├── 1.CSharp-Advanced/   # collections, generics, delegates, events, records,
-│                        #   exceptions, pattern matching, nullable refs, async
-├── 2.EF-Core/           # introduction, configurations & relationships, loading & tracking
-├── 3.LINQ/              # LINQ fundamentals
+│                        #   exceptions, pattern matching, nullable refs, async,
+│                        #   iterators, reflection, Span<T>
+├── 2.EF-Core/           # introduction, configurations & relationships, loading & tracking,
+│                        #   transactions & concurrency, performance
+├── 3.LINQ/              # fundamentals, advanced operators, IQueryable vs IEnumerable
 ├── 4.Web-Basics/        # web fundamentals, ASP.NET Core, DI, middleware,
 │                        #   filters, validation, auth
-├── 5.MVC/               # MVC pattern + full request flow (references GymSystem)
-├── 6.design-patterns/   # repository & unit of work, result pattern, DTOs & AutoMapper
+├── 5.MVC/               # MVC pattern + full request flow, Razor deep dive
+├── 6.Design-Patterns/   # repository & UoW, result, DTOs & AutoMapper, options,
+│                        #   factory & strategy, decorator & caching, CQRS & MediatR
+├── 7.Web-API/           # REST design, Swagger, minimal APIs, error handling
+├── 8.Architecture/      # architecture styles, onion, clean, logging, background jobs
 └── README.md
 ```
 
